@@ -1,6 +1,7 @@
-import Header from "./component/Header";
+import Header from "./component/Header/Header";
 import Main from "./component/Main";
 import { CORE_CONCEPTS } from "./data/data";
+import Example from "./component/Example/Example";
 
 function App() {
 
@@ -11,6 +12,7 @@ function App() {
                 coreConceptsArray={CORE_CONCEPTS}
                 content={'Time to get started!'}
             />
+            <Example />
         </div>
     );
 }

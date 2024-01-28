@@ -34,4 +34,27 @@ const CORE_CONCEPTS = [
     },
 ];
 
-export { CORE_CONCEPTS };
+const TAB_BUTTONS = [
+    {
+        label: 'Components',
+        content: 'Components',
+        index: 1
+    },
+    {
+        label: 'JSX',
+        content: 'JSX',
+        index: 2
+    },
+    {
+        label: 'Props',
+        content: 'Props',
+        index: 3
+    },
+    {
+        label: 'State',
+        content: 'State',
+        index: 4
+    },
+];
+
+export { CORE_CONCEPTS, TAB_BUTTONS };
