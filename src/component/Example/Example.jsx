@@ -32,6 +32,7 @@ const Example = () => {
                       tabButton.description,
                     )
                   }
+                  active={tabState === tabButton.index}
                 />
               ))
             : null}
