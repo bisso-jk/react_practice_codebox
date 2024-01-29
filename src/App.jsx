@@ -6,14 +6,14 @@ import Example from "./component/Example/Example";
 function App() {
 
     return (
-        <div>
+        <>
             <Header/>
             <Main
                 coreConceptsArray={CORE_CONCEPTS}
                 content={'Time to get started!'}
             />
             <Example />
-        </div>
+        </>
     );
 }
 
