@@ -20,23 +20,24 @@ const Example = () => {
       <section id={"examples"}>
         <h2>Examples</h2>
         <menu>
-          {TAB_BUTTONS &&
-            TAB_BUTTONS.map((tabButton) => (
-              <TabButton
-                label={tabButton.label}
-                onClickFunction={() =>
-                  handleClickMenu(
-                    tabButton.index,
-                    tabButton.label,
-                    tabButton.code,
-                    tabButton.description,
-                  )
-                }
-              />
-            ))}
+          {TAB_BUTTONS
+            ? TAB_BUTTONS.map((tabButton) => (
+                <TabButton
+                  label={tabButton.label}
+                  onClickFunction={() =>
+                    handleClickMenu(
+                      tabButton.index,
+                      tabButton.label,
+                      tabButton.code,
+                      tabButton.description,
+                    )
+                  }
+                />
+              ))
+            : null}
         </menu>
       </section>
-      {description && (
+      {tabState !== 0 ? (
         <section id={"tab-content"}>
           <h3>{label}</h3>
           <p>{description}</p>
@@ -44,7 +45,7 @@ const Example = () => {
             <code>{code}</code>
           </pre>
         </section>
-      )}
+      ) : null}
     </main>
   );
 };

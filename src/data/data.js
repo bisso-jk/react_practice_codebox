@@ -41,9 +41,9 @@ const TAB_BUTTONS = [
       "Components are the building blocks of React applications. A component is a self-contained module (HTML + optional CSS + JS) that renders some output.",
     index: 1,
     code: `
-    function Welcome() {
-        return <h1>Hello, World!</h1>;
-    }`,
+function Welcome() {
+    return <h1>Hello, World!</h1>;
+}`,
   },
   {
     label: "JSX",
@@ -51,10 +51,10 @@ const TAB_BUTTONS = [
       "JSX is a syntax extension to JavaScript. It is similar to a template language, but it has full power of JavaScript (e.g., it may output dynamic content).",
     index: 2,
     code: `
-    <div>
-        <h1>Welcome {userName}</h1>
-        <p>Time to learn React!</p>
-    </div>`,
+<div>
+    <h1>Welcome {userName}</h1>
+    <p>Time to learn React!</p>
+</div>`,
   },
   {
     label: "Props",
@@ -62,9 +62,9 @@ const TAB_BUTTONS = [
       "Components accept arbitrary inputs called props. They are like function arguments.",
     index: 3,
     code: `
-    function Welcome(props) {
-      return <h1>Hello, {props.name}</h1>;
-    }`,
+function Welcome(props) {
+  return <h1>Hello, {props.name}</h1>;
+}`,
   },
   {
     label: "State",
@@ -72,20 +72,20 @@ const TAB_BUTTONS = [
       "State allows React components to change their output over time in response to user actions, network responses, and anything else.State allows React components to change their output over time in response to user actions, network responses, and anything else.",
     index: 4,
     code: `
-    function Counter() {
-      const [isVisible, setIsVisible] = useState(false);
-    
-      function handleClick() {
-        setIsVisible(true);
-      }
-    
-      return (
-        <div>
-          <button onClick={handleClick}>Show Details</button>
-          {isVisible && <p>Amazing details!</p>}
-        </div>
-      );
-    }`,
+function Counter() {
+  const [isVisible, setIsVisible] = useState(false);
+
+  function handleClick() {
+    setIsVisible(true);
+  }
+
+  return (
+    <div>
+      <button onClick={handleClick}>Show Details</button>
+      {isVisible && <p>Amazing details!</p>}
+    </div>
+  );
+}`,
   },
 ];
 
