@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { TAB_BUTTONS } from "/src/data/data";
 import TabButton from "./TabButton";
+import Section from "../Section/Section";
 
 const Example = () => {
   const [tabState, setTabState] = useState(0);
@@ -17,8 +18,7 @@ const Example = () => {
 
   return (
     <main>
-      <section id={"examples"}>
-        <h2>Examples</h2>
+      <Section id={"examples"} title={"Examples"}>
         <menu>
           {TAB_BUTTONS
             ? TAB_BUTTONS.map((tabButton) => (
@@ -37,7 +37,7 @@ const Example = () => {
               ))
             : null}
         </menu>
-      </section>
+      </Section>
       {tabState !== 0 ? (
         <section id={"tab-content"}>
           <h3>{label}</h3>

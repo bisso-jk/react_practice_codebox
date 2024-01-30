@@ -1,11 +1,11 @@
+import Section from "../Section/Section";
 import CoreConcept from "./CoreConcept";
 
 const CoreConcepts = ({coreConceptsArray}) => {
 
     return (
         <main>
-            <section id={'core-concepts'}>
-                <h2>Core Concepts</h2>
+            <Section id={'core-concepts'} title={"Core Concepts"}>
                 <ul>
                     {coreConceptsArray && coreConceptsArray.map(m => (
                         <CoreConcept
@@ -17,7 +17,7 @@ const CoreConcepts = ({coreConceptsArray}) => {
                         />
                     ))}
                 </ul>
-            </section>
+            </Section>
         </main>
     );
 };
