@@ -1,6 +1,6 @@
 import CoreConcept from "./CoreConcept";
 
-const Main = ({content, coreConceptsArray}) => {
+const CoreConcepts = ({coreConceptsArray}) => {
 
     return (
         <main>
@@ -18,10 +18,9 @@ const Main = ({content, coreConceptsArray}) => {
                     ))}
                 </ul>
             </section>
-            <h2>{content}</h2>
         </main>
     );
 };
 
 
-export default Main;
+export default CoreConcepts;
