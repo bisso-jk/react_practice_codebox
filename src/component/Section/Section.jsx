@@ -2,10 +2,12 @@
 
 const Section = ({id, title, children}) => {
     return (
-        <section id={id}>
-            <h2>{title}</h2>
-            {children}
-        </section>
+        <main>
+            <section id={id}>
+                <h2>{title}</h2>
+                {children}
+            </section>
+        </main>
     );
 };
 

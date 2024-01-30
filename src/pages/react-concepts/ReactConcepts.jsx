@@ -1,7 +1,8 @@
 import Header from "/src/component/Header/Header";
 import CoreConcepts from "/src/component/CoreConcept/CoreConcepts";
 import { CORE_CONCEPTS } from "/src/data/data";
-import Example from "/src/component/Example/Example";
+import Examples from "../../component/Example/Examples";
+
 
 const ReactConcepts = () => {
   return (
@@ -10,7 +11,7 @@ const ReactConcepts = () => {
       <CoreConcepts
         coreConceptsArray={CORE_CONCEPTS}
       />
-      <Example />
+      <Examples />
     </div>
   );
 };
