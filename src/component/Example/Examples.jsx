@@ -24,7 +24,6 @@ const Examples = () => {
                     index={tabIndex}
                     tabButtons={TAB_BUTTONS} 
                     handleClickMenu={handleClickMenu} 
-                    ButtonContainer={'menu'}
                     />   
                 <TabContent 
                     index={tabIndex} 

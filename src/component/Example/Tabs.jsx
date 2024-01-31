@@ -1,6 +1,6 @@
 import TabButton from "./TabButton";
 
-const Tabs = ({index, tabButtons, handleClickMenu, ButtonContainer}) => {
+const Tabs = ({index, tabButtons, handleClickMenu, ButtonContainer = 'menu'}) => {
   
 
   return (
